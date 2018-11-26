@@ -10,7 +10,7 @@
       </h1>
       <a 
         class="introduction-action" 
-        href="#">
+        href="/Curriculum_LuizOtavio.pdf">
         Curriculum
       </a>
     </div>
