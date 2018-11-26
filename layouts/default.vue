@@ -133,14 +133,21 @@ export default {
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
+  html {
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    min-height: 100%;
+    width: 100%;
+    background-color: #373841;
+  }
   #layout-default{
     font-family: 'Poppins', sans-serif;
-    background-color: #373841;
-    color: #ffffff;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
     .navbar{
       &.is-normal{
         background-color: transparent;
@@ -206,20 +213,27 @@ export default {
     #effects{
       #effect-left{
         top: 200px;
-        left: -400px;
+        left: -300px;
         position: absolute;
-        height: 170px;
-        width: 660px;
+        height: 120px;
+        width: 465px;
         background-image: url("/effect-left.svg");
+        @media screen and (max-width: 625px) {
+          display: none;
+        }
       }
       #effect-top{
-        top: -100px;
-        right: -400px;
+        display: none;
+        top: -70px;
+        right: -275px;
         position: absolute;
-        height: 170px;
-        width: 660px;
+        height: 120px;
+        width: 465px;
         transform: rotate(335deg);
-        background-image: url("/teste.svg");
+        background-image: url("/effect-left.svg");
+        @media screen and (max-width: 450px) {
+          display: none;
+        }
       }
     }
   }

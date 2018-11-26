@@ -41,8 +41,9 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 50px 0px;
+    margin: 30px 0px;
     div.introduction{
+      color: #fff;
       h1{
         display: flex;
         flex-direction: column;
