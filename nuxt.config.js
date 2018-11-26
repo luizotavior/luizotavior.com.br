@@ -42,7 +42,10 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     // Doc: https://buefy.github.io/#/documentation
-    'nuxt-buefy'
+    'nuxt-buefy',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-129772775-1'
+    }]
   ],
   /*
   ** Axios module configuration
