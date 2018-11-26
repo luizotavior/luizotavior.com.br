@@ -110,7 +110,13 @@
           </div>
 
           <div class="content">
-            Olá! Infelizmente meu portfolio não se encontra finalizado. Entretanto, caso deseje você pode fazer download do <a href="/Curriculum_LuizOtavio.pdf">curriculum</a> ou entrar em contato comigo atraves do meu e-mail <a href="mailto:luiz.otavior18@gmail.com">luiz.otavior18@gmail.com</a> respondo rapidamente.<br>Obrigado pela sua visita ! <br> Abraços,
+            Olá! Infelizmente meu portfolio não se encontra finalizado. Entretanto, caso deseje você pode fazer download do
+            <a
+              href="/Curriculum_LuizOtavio.pdf"
+              target="_blank">
+              curriculum
+            </a>
+            ou entrar em contato comigo atraves do meu e-mail <a href="mailto:luiz.otavior18@gmail.com">luiz.otavior18@gmail.com</a> respondo rapidamente.<br>Obrigado pela sua visita ! <br> Abraços,
             <br>
             <small>15:33 PM - 25 Nov 2018</small>
           </div>
