@@ -10,9 +10,9 @@
       </h1>
       <a 
         class="introduction-action" 
-        href="/Curriculum_LuizOtavio.pdf"
+        href="/Curriculo_LuizOtavio.pdf"
         target="_blank">
-        Curriculum
+        Currículo
       </a>
     </div>
     <luiz-person/>

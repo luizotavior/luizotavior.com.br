@@ -29,19 +29,22 @@
         <div class="navbar-start">
           <a 
             class="navbar-item"
-            href="https://www.facebook.com/luizotavior18">
+            href="https://www.facebook.com/luizotavior18"
+            target="_blank">
             <b-icon 
               icon="facebook-box"/>
           </a>
           <a 
             class="navbar-item"
-            href="https://github.com/luizotavior">
+            href="https://github.com/luizotavior"
+            target="_blank">
             <b-icon 
               icon="github-circle"/>
           </a>
           <a 
             class="navbar-item"
-            href="https://www.linkedin.com/in/luizotavior/">
+            href="https://www.linkedin.com/in/luizotavior/"
+            target="_blank">
             <b-icon 
               icon="linkedin"/>
           </a>
@@ -90,7 +93,7 @@
         <div class="card-image">
           <figure class="image is-4by3">
             <img 
-              src="https://www.febracis.com.br/wp/wp-content/uploads/2018/05/sao-jose-dos-campos-carlos-nava-castillo.jpg"
+              src="/sao-jose-dos-campos.jpg"
               alt="Image">
           </figure>
         </div>
@@ -112,9 +115,9 @@
           <div class="content">
             Olá! Infelizmente meu portfolio não se encontra finalizado. Entretanto, caso deseje você pode fazer download do
             <a
-              href="/Curriculum_LuizOtavio.pdf"
+              href="/Curriculo_LuizOtavio.pdf"
               target="_blank">
-              curriculum
+              currículo
             </a>
             ou entrar em contato comigo atraves do meu e-mail <a href="mailto:luiz.otavior18@gmail.com">luiz.otavior18@gmail.com</a> respondo rapidamente.<br>Obrigado pela sua visita ! <br> Abraços,
             <br>
@@ -137,6 +140,24 @@ export default {
 }
 </script>
 
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Person",
+  "name": "Luiz Otávio Rodrigues",
+  "url": "https://luizotavior.com.br",
+  "image": "https://luizotavior.com.br/luiz.jpg",
+  "sameAs": [
+    "https://www.facebook.com/luizotavior18",
+    "https://github.com/luizotavior",
+    "https://www.instagram.com/luiz.otavior/",
+    "https://www.linkedin.com/in/luizotavior/"
+  ],
+  "jobTitle": "Full Stack Developer"  
+}
+</script>
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
   html {
@@ -187,8 +208,7 @@ export default {
             margin: 15px;
           }
         } 
-      } 
-        
+      }  
       .avatar{
         height: 70px;
         width: 70px;
