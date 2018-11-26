@@ -19,7 +19,7 @@
 </template>
 
 <script>
-  import LuizPerson from '@/components/Luiz'
+  import LuizPerson from '@/components/luiz'
   export default {
     name: 'HomePage',
     components: {
