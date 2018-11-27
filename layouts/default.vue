@@ -131,10 +131,31 @@
 
 <script>
 export default {
+  head () {
+    return {
+      script: [
+        { type: 'application/ld+json', src: JSON.stringify(this.structuredData) }
+      ]
+    }
+  },
   data() {
     return {
       isModal: false,
       isResponsive: false,
+      structuredData: {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "Luiz Otávio Rodrigues",
+        "url": "https://luizotavior.com.br",
+        "image": "https://luizotavior.com.br/luiz.jpg",
+        "sameAs": [
+          "https://www.facebook.com/luizotavior18",
+          "https://github.com/luizotavior",
+          "https://www.instagram.com/luiz.otavior/",
+          "https://www.linkedin.com/in/luizotavior/"
+        ],
+        "jobTitle": "Full Stack Developer"  
+      },  
     }
   }
 }
@@ -142,22 +163,6 @@ export default {
 
 
 
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org/",
-  "@type": "Person",
-  "name": "Luiz Otávio Rodrigues",
-  "url": "https://luizotavior.com.br",
-  "image": "https://luizotavior.com.br/luiz.jpg",
-  "sameAs": [
-    "https://www.facebook.com/luizotavior18",
-    "https://github.com/luizotavior",
-    "https://www.instagram.com/luiz.otavior/",
-    "https://www.linkedin.com/in/luizotavior/"
-  ],
-  "jobTitle": "Full Stack Developer"  
-}
-</script>
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
   html {
