@@ -16,8 +16,8 @@ export default {
 
 <style lang="scss" scoped>
   div#luiz{
-    height: 550px;
-    width: 500px;
+    height: 450px;
+    width: 400px;
     background-image: url("/luiz-fundo.svg");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */

@@ -1,5 +1,5 @@
 <template>
-  <section 
+  <section
     id="start"
     class="section-start">
     <div class="introduction">
@@ -8,11 +8,11 @@
         <span class="family-name">Rodrigues</span>
         <span class="office">Full-Stack Developer</span>
       </h1>
-      <a 
-        class="introduction-action" 
-        href="/Curriculo_LuizOtavio.pdf"
+      <a
+        class="introduction-action"
+        href="https://www.linkedin.com/in/luizotavior/"
         target="_blank">
-        Currículo
+        Contato
       </a>
     </div>
     <luiz-person/>

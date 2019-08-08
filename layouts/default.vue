@@ -6,126 +6,47 @@
       aria-label="main navigation">
       <div class="navbar-brand">
         <div class="avatar">
-          <img 
+          <img
             src="/luiz.jpg"
             alt="Luiz Otávio Rodrigues">
         </div>
-        <a 
-          :class="{'navbar-burger': true,'burger': true,'is-active': isResponsive}"
-          role="button"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-          @click="isResponsive = !isResponsive">
-          <span aria-hidden="true"/>
-          <span aria-hidden="true"/>
-          <span aria-hidden="true"/>
-        </a>
       </div>
 
-      <div 
+      <div
         id="navbarBasicExample"
         :class="{'navbar-menu': true,'is-active': isResponsive}">
         <div class="navbar-start">
-          <a 
+          <a
             class="navbar-item"
             href="https://www.facebook.com/luizotavior18"
             target="_blank">
-            <b-icon 
+            <b-icon
               icon="facebook-box"/>
           </a>
-          <a 
+          <a
             class="navbar-item"
             href="https://github.com/luizotavior"
             target="_blank">
-            <b-icon 
+            <b-icon
               icon="github-circle"/>
           </a>
-          <a 
+          <a
             class="navbar-item"
             href="https://www.linkedin.com/in/luizotavior/"
             target="_blank">
-            <b-icon 
+            <b-icon
               icon="linkedin"/>
           </a>
-        </div>
-
-        <div class="navbar-end">
-          <a 
-            class="navbar-item"
-            href="#start"
-            @click="isModal = true">Inicio</a>
-          <a 
-            class="navbar-item"
-            href="#about"
-            @click="isModal = true">Sobre</a>
-          <a 
-            class="navbar-item"
-            href="#carrer"
-            @click="isModal = true">Carreira</a>
-          <a 
-            class="navbar-item"
-            href="#skills"
-            @click="isModal = true">Habilidades</a>
-          <a 
-            class="navbar-item"
-            href="#portfolio"
-            @click="isModal = true">Portfólio</a>
-          <a 
-            class="navbar-item"
-            href="#contact"
-            @click="isModal = true">Contato</a>
         </div>
       </div>
     </nav>
     <nuxt />
     <div id="effects">
-      <div 
+      <div
         id="effect-left"/>
-      <div 
+      <div
         id="effect-top"/>
     </div>
-    <b-modal
-      :active.sync="isModal"
-      :width="640"
-      scroll="keep">
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img 
-              src="/sao-jose-dos-campos.jpg"
-              alt="Image">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img 
-                  src="/luiz.jpg"
-                  alt="Image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">Luiz Otávio Rodrigues</p>
-              <p class="subtitle is-6">@luizotavior</p>
-            </div>
-          </div>
-
-          <div class="content">
-            Olá! Infelizmente meu portfolio não se encontra finalizado. Entretanto, caso deseje você pode fazer download do
-            <a
-              href="/Curriculo_LuizOtavio.pdf"
-              target="_blank">
-              currículo
-            </a>
-            ou entrar em contato comigo atraves do meu e-mail <a href="mailto:luiz.otavior18@gmail.com">luiz.otavior18@gmail.com</a> respondo rapidamente.<br>Obrigado pela sua visita ! <br> Abraços,
-            <br>
-            <small>15:33 PM - 25 Nov 2018</small>
-          </div>
-        </div>
-      </div>
-    </b-modal>
   </div>
 </template>
 
@@ -154,8 +75,8 @@ export default {
           "https://www.instagram.com/luiz.otavior/",
           "https://www.linkedin.com/in/luizotavior/"
         ],
-        "jobTitle": "Full Stack Developer"  
-      },  
+        "jobTitle": "Full Stack Developer"
+      },
     }
   }
 }
@@ -168,11 +89,13 @@ export default {
   html {
     height: 100%;
     width: 100%;
+    overflow-y: auto;
   }
   body {
     min-height: 100%;
     width: 100%;
     background-color: #373841;
+    overflow-y: auto;
   }
   #layout-default{
     font-family: 'Poppins', sans-serif;
@@ -180,19 +103,19 @@ export default {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    overflow-y: auto;
     .navbar{
+      margin-top: 12px;
       &.is-normal{
         background-color: transparent;
       }
       @media screen and (max-width: 1024px) {
         width: 90%;
-        margin-top: 20px;
       }
       @media screen and (min-width: 1024px) {
         background-color: transparent;
         width: 70%;
         min-width: 1024px;
-        margin-top: 50px;
       }
       &.is-active{
         @media screen and (max-width: 1024px) {
@@ -212,8 +135,8 @@ export default {
           .avatar{
             margin: 15px;
           }
-        } 
-      }  
+        }
+      }
       .avatar{
         height: 70px;
         width: 70px;
